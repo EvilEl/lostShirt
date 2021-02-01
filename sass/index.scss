@@ -1,0 +1,77 @@
+// @import '_nullstyle';
+
+body {
+    background: #fcf5e6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 16px / 1.42 "Roboto", Arial, sans-serif;
+    color: #212121;
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+ul>li {
+    list-style: none;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-width: 1310px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+@mixin bgYellow {
+    background: #ffbc2f;
+}
+
+@mixin bgBlack {
+    background: #1b1b1b;
+}
+
+@mixin bgRed {
+    background: #d82727;
+}
+
+@mixin bgModBlack {
+    background: #232323;
+}
+
+@mixin colorTextYellow {
+    color: #ffbc2f;
+}
+
+@mixin colorTextRed {
+    color: #d82727;
+}
+
+@mixin fontFamyliYAlegreya {
+    font-family: 'alegreya', Arial, sans-serif;
+}
+
+@mixin fontFamyliYanone {
+    font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+}
+
+@import '_hero';
+@import '_products';
+@import '_collections';
+@import '_footer';
+
+@font-face {
+    font-family: 'alegreya';
+    src: url('../fonts/alegreyasanssc-black-webfont.woff') format('woff2'),
+        url('../fonts/alegreyasanssc-black-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

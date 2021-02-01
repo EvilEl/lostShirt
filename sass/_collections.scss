@@ -1,0 +1,83 @@
+.collections {
+    margin-bottom: 135px;
+
+    .collections__list {
+        display: flex;
+        justify-content: space-between;
+
+        .collections__item {
+            min-height: 474px;
+            flex: 1;
+            overflow: hidden;
+            margin-right: 30px;
+            background: url(../img/bg/pattern.png)center center /500px;
+            position: relative;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                height: 176%;
+                width: 60%;
+                background: center center / contain no-repeat;
+                top: -17%;
+                left: -18%;
+            }
+
+            .collections__link {
+                display: block;
+                padding: 70px 13% 74px 44%;
+                text-decoration: none;
+                color: inherit;
+                font-size: 15px;
+                position: relative;
+                height: 100%;
+                box-sizing: border-box;
+
+                .collections__title {
+                    @include fontFamyliYanone;
+                    line-height: 1;
+                    font-weight: bold;
+                    font-size: 70px;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+
+                .collections__desc {
+                    margin-bottom: 28px;
+                }
+
+                .btn {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    @include fontFamyliYanone;
+                    @include colorTextYellow;
+                    @include bgBlack;
+                    font-size: 24px;
+                    padding: 4px 28px;
+                    display: inline-block;
+                }
+
+                &:hover .btn {
+                    @include bgRed;
+                    color: #fff;
+                }
+            }
+        }
+
+        .collections__item--type-guys::before {
+            background-image: url('/img/collections/collection_man.png');
+        }
+
+        .collections__item--type-woman::before {
+            background-image: url('/img/collections/collection_woman.png');
+            width: 80%;
+            top: -31%;
+            left: -25%;
+        }
+    }
+}
